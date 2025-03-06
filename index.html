@@ -35,9 +35,25 @@
                 <li><a href="tel:+110001111111" class="address-link">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons-menu.svg#icon-heroicons-solid_menu"> </use>
+            </svg> 
+        </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" type="button" data-menu-close>
+                    Close
+                </button>
+                <nav class="mobile-menu-nav">Navigation</nav>
+                <address>Adress</address>
+            </div>
         </div>
     </header>
     <main>
+        
     <!--Частина з кнопкою-->
     
         <section class="business">
@@ -46,9 +62,10 @@
             <button type="button" class="button-business" data-modal-open>Order Service</button>
             </div>
     </section>
+
     <!--Головна частина-->
     <section class="tri-container">
-        <div class="container">
+        <div class="container noname-container">
         <h2 class="base-h-two">Advantages</h2>
         <ul class="nav-list-section">
             <li class="base-h">
@@ -100,12 +117,20 @@
         <h2 class="base-h-two-van">Our Team</h2>
         <ul class="nav-list-command">
             <li class="comand-link">
+                <pictures>
+                    <source
+                    srcset="
+                    ./images/team/markguerrerox1.jpg 1x,
+                    ./images/team/markguerrerox2.jpg 2x "
+                    />
                 <img
-                src="./images/img-3.jpg"
+                class="img"
+                src="./images/team/markguerrerox1.jpg"
                 alt="Mark_Guerrero_photo"
                 width="264"
                 height="260"
-                class="img" />
+                 />
+                </pictures>
                 <div class="container-name">
                 <h3 class="base-h-tri">Mark Guerrero</h3>
                 <p class="base-pp">Product Designer</p>
@@ -150,10 +175,17 @@
             </li>
 
             <li class="comand-link">
-                <img src="./images/img-2.jpg" 
+                <pictures>
+                    <source 
+                    srcset="./images/team/tomfordx1.jpg 1x,
+                    ./images/team/tomfordx2.jpg 2x
+                    "
+                    />                
+                <img src="./images/team/tomfordx1.jpg" 
                 alt="Tom_Ford_photo" 
                 width="264" 
                 height="260" />
+                </pictures>
                 <div class="container-name">
                 <h3 class="base-h-tri">Tom Ford</h3>
                 <p class="base-pp">Frontend Developer</p>
@@ -198,10 +230,17 @@
             </li>
 
             <li class="comand-link">
-                <img src="./images/img-1.jpg" 
+                <pictures>
+                    <source
+                    srcset="./images/team/camilagarciax1.jpg 1x,
+                    ./images/team/camilagarciax2.jpg 2x
+                    "
+                    />
+                <img src="./images/team/camilagarciax1.jpg" 
                 alt="Camila_Garcia_photo" 
                 width="264" 
                 height="260" />
+                </pictures>
                 <div class="container-name">
                 <h3 class="base-h-tri">Camila Garcia</h3>
                 <p class="base-pp">Marketing</p>
@@ -246,10 +285,17 @@
             </li>
 
             <li class="comand-link">
-                <img src="./images/img.jpg" 
+                <pictures>
+                    <source
+                    srcset="./images/team/danielwilsonx1.jpg 1x,
+                    ./images/team/danielwilsonx2.jpg 2x
+                    "
+                    />
+                <img src="./images/team/danielwilsonx1.jpg" 
                 alt="Daniel_Wilson_photo" 
                 width="264" 
                 height="260" />
+                </pictures>
                 <div class="container-name">
                 <h3 class="base-h-tri">Daniel Wilson</h3>
                 <p class="base-pp">UI Designer</p>
